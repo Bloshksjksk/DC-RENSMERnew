@@ -19,10 +19,10 @@ class Client(RawClient, New):
 
     def __init__(self, session_name: Union[str, Storage] = "RenameBot"):
         super().__init__(
-            self.session_name,
-            self.api_id=Config.API_ID,
-            self.api_hash=Config.API_HASH,
-            self.bot_token=Config.BOT_TOKEN,
+            session_name='RenameBot',
+            api_id=Config.API_ID,
+            api_hash=Config.API_HASH,
+            bot_token=Config.BOT_TOKEN,
             plugins=dict(
                 root="bot/plugins"
             )
