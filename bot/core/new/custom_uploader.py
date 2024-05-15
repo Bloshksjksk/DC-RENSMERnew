@@ -35,7 +35,7 @@ from pyrogram.session import (
     Auth,
     Session
 )
-from pyrogram.scaffold import Scaffold
+from flask.sansio.scaffold import Scaffold
 
 LOGGER = Config.LOGGER
 log = LOGGER.getLogger(__name__)
