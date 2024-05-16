@@ -19,7 +19,7 @@ class Client(RawClient, New):
 
     #def __init__(self, name: Union[str, Storage] = "RenameBot"):
     #    super().__init__(
-    mergeApp = Client(
+    mergeApp = RawClient(
             name="RenameBot",
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
