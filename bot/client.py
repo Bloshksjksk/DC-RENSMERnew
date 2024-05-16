@@ -11,7 +11,7 @@ from aiohttp import web
 
 
 LOGGER = Config.LOGGER
-log = LOGGER.getLogger(__name__)
+#log = LOGGER.getLogger(__name__)
 
 
 class Client(RawClient, New):
