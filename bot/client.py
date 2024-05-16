@@ -11,18 +11,19 @@ from aiohttp import web
 
 
 LOGGER = Config.LOGGER
-#log = LOGGER.getLogger(__name__)
+log = LOGGER.getLogger(__name__)
 
 
 class Client(RawClient, New):
     """ Custom Bot Class """
 
-    def __init__(self, name: Union[str, Storage] = "RenameBot"):
-        super().__init__(
-            name,
-            self.api_id=Config.API_ID,
-            self.api_hash=Config.API_HASH,
-            self.bot_token=Config.BOT_TOKEN,
+    #def __init__(self, name: Union[str, Storage] = "RenameBot"):
+    #    super().__init__(
+    mergeApp = Client(
+            name="RenameBot",
+            api_id=Config.API_ID,
+            api_hash=Config.API_HASH,
+            bot_token=Config.BOT_TOKEN,
             plugins=dict(
                 root="bot/plugins"
             )
