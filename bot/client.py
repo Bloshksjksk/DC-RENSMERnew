@@ -17,9 +17,9 @@ log = LOGGER.getLogger(__name__)
 class Client(RawClient, New):
     """ Custom Bot Class """
 
-    def __init__(self, session_name: Union[str, Storage] = "RenameBot"):
+    def __init__(self, name: Union[str, Storage] = "RenameBot"):
         super().__init__(
-            session_name,
+            name,
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
